@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fractions</title>
+    <script>
+        function generate() {
+            var pathname = window.location.pathname;
+            var parts = pathname.split("/");
+            var denominator = parts.pop();
+            var numerator = parts.pop();
+            document.getElementById("numerator").textContent = numerator;
+            document.getElementById("denominator").textContent = denominator;
+        }
+    </script>
+</head>
+
+<body onload="generate()">
+    <table>
+        <tbody>
+            <tr>
+                <td id="numerator"></td>
+            </tr>
+            <tr>
+                <td id="denominator"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
