@@ -2,10 +2,15 @@
     "name": "fractions",
     "version": "1.0.0",
     "description": "Url to table fraction",
-    "main": "404.html",
+    "homepage": "https://peteredhead.github.io/fractions/",
+    "main": "src/404.html",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "deploy": "gh-pages -d src"
     },
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "gh-pages": "^3.2.3"
+    }
 }
